@@ -2,5 +2,4 @@
 
 Completed Labs for John Q. Student
 
-1. [John Q's Lab 1](//github.com/johnqstudent/idd-fa18-lab1)
-2. [John Q's Lab 2](//github.com/johnqstudent/idd-fa18-lab2)
+1. [Everett K's Lab 1](https://github.com/EverettKey/Developing-and-Designing-Interactive-Devices/tree/2020Fall/Lab1)
