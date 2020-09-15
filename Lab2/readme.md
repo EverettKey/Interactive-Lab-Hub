@@ -15,7 +15,12 @@ Please come up with 10 ideas of what you could do. They *do not* need to be pote
 2. Single sound drum kit: Replays the pressed button with beep. Looped
 3. Timing precision: Two buttons each with an LED. Timer starts counting down, two players try to press the button when it counts to 0, the closer to 0 player's LED will light up.
 4. Metronome: A knob for adjusting speed, a speaker for playing beat.
-5. 
+5. Run-Back-To-Bed light: Lights up after you turn off the room's light. Keeps the room illuminated for enough time for you to get to your bedroom.
+6. Awkward saver: Break the silence with radio if the room goes quiet for a certain time.
+7. Hand-wash timer: Turn on the water tap for you, but only after you've scrub your hands for 20s.
+8. Delayed autolock: Lock the door 30s after it's closed, so you don't need to find your keys when you're just getting the mail.
+9. Fake echo: play back the received sound with echo effect.
+10. Typing speed assessment: measure how fast you can type in one minute.
 
 
 ## Overview
