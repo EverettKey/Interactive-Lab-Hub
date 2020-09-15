@@ -11,6 +11,13 @@
 
 Please come up with 10 ideas of what you could do. They *do not* need to be potential market blockbusters. They *do* need to be things you feel like doing next week. Draw sketches with each of your ideas. 
 
+1. Pomodoro focus Timer: Place cellphone on a switch, engage the switch with cellphone weight. Alarm will sound if cellphone is lifted from the switch before timer counts to 0.
+2. Single sound drum kit: Replays the pressed button with beep. Looped
+3. Timing precision: Two buttons each with an LED. Timer starts counting down, two players try to press the button when it counts to 0, the closer to 0 player's LED will light up.
+4. Metronome: A knob for adjusting speed, a speaker for playing beat.
+5. 
+
+
 ## Overview
 For this assignment, you are going to 
 
@@ -49,6 +56,7 @@ Incorporate the LCD into with this [AnalogInput code](https://www.arduino.cc/en/
 
 **e. Include a copy of your Lowly Multimeter code in your lab write-up.**
 
+Yes ma'am
 <!-- Now build a circuit with two FSR sensors (one from your self and one borrowed from a fellow student) to enable a game of thumb wrestling. Use the LCD to indicate who is squeezing their FSR harder!
 
 **f. Include a copy of your FSR thumb wrestling code in your lab write-up.** -->
@@ -91,6 +99,8 @@ Wire it to your circuit with the - to ground and the + to Arduino Micro pin 8.
 
 **a. How would you change the code to make the song play twice as fast?**
  
+**A:** I will doube every number in the `noteDurations` array. Possibly with a for loop. 
+
 Now change the speed back, and replace the melody[] and noteDurations[] arrays with the following:
 ```c++
 
@@ -108,6 +118,7 @@ You'll also have to increase the for() loop index max from 8 to 20:
  ```
 **b. What song is playing?**
  
+ The first 4 bars of *Star Wars (Main Theme)* by John Willams.
 ## Part E. Make your own timer
 
 Make a timer that uses any of the input devices to set a time, and then automatically (or manually, if you prefer) begin counting down, displaying the time left. Make your timer show an alert once the time is up with one of the output devices we connected during this lab, or you have available. (Hint: the sample code for [Examples->LiquidCrystal->HelloWorld](https://www.arduino.cc/en/Tutorial/HelloWorld) displays the time in seconds since the Arduino was reset...)
@@ -118,4 +129,8 @@ Note that for some of you, the time may seem to be decremented by 10 each second
 
 **a. Make a short video showing how your timer works, and what happens when time is up!**
 
+https://youtu.be/GTU7bfUVcug
+
 **b. Post a link to the completed lab report your GitHub repo.**
+
+Yes ma'am
