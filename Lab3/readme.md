@@ -91,6 +91,10 @@ Servo motors generally have 3 wires; power, ground and signal. [Here](https://ww
 
 **a. Which color wires correspond to power, ground and signal?**
 
+Brown: Ground
+Red: 5V
+orange: Pin 9
+
 Connect the servo to your breadboard, supplying power and ground to the appropriate pins. 
 
 ### Part 2. Connect the Servo to your Arduino
@@ -106,6 +110,8 @@ Change some parameters in the sketch to make the servo sweep slower, or over a s
 
 **b. What aspects of the Servo code control angle or speed?**
 
+The `myservo.write(<position>)` sets the servo motor to position `<posiiton>`. The rate in which we update the position dictates how fast the servo motor moves.
+
 ## Part C. Integrating input and output
 
 Using what you've learned already, write code to control the servo motor circuit, either:
@@ -119,6 +125,8 @@ Remove the USB cable
 Use the 9V battery and pigtail to power the Arduino using the Vin and Ground line.
 
 **Include a photo/movie of your autonomous device in action.**
+
+[NO USB](https://youtu.be/tsTf1NCtRoc)
 
 ## Part E. Paper display
 
@@ -157,3 +165,5 @@ You can create a game, you can enact a pre-programmed mini puppet show, or you c
 <!--If your design involves having someone controlling the puppet in real time (e.g. using sensors), please film that happening. Otherwise, film the puppet performing it's moves. -->
 
 **a. Make a video of your final design in action.**
+
+[Augmented Windsihled Wiper!](https://youtu.be/Oxeda0Krjgk)
