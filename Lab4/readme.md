@@ -50,7 +50,11 @@ The OLED display from the Lab 02 is a great and helpful tool for debug purposes;
  
 **a. Based on the readings from the serial monitor, what is the range of the analog values being read?**
  
+    0 ~ 1023
+
 **b. How many bits of resolution does the analog to digital converter (ADC) on the Arduino have** (hint: where might you look to find this sort of thing)? How many are you using with the range of values you're seeing?
+
+1024 is 2 to the 10th power, so 10 biths
  
 You can also read inputs from the serial monitor, or wait for the serial monitor to open before spewing data over the USB line! A nice tutorial on the basic serial transmit functions can be found at http://arduino.cc/en/Tutorial/AnalogReadSerial. 
 
@@ -87,9 +91,15 @@ We need a voltage divider because the Arduino can't measure resistance directly,
 
 **a. What voltage values do you see from your force sensor?**
 
+Using a 100 Ohm resistor, the highest A0 reading I could reach by pinching the sensor was ~300. Using a 5K1 Ohm resister I could get the value pass 1000 but never was ablt to reach 1023. We can get close but never reach 5V using the sensor.
+
 **b. What kind of relationship does the voltage have as a function of the force applied? (e.g., linear?)**
 
+Exponential, the log-log plot of the sensor's received force and resistance is linear
+
 **c. In `Examples->Basic->Fading` the RGB LED values range from 0-255. What do you have to do so that you get the full range of output voltages from the RGB LED when using your FSR to change the LED color?**
+I can first divide the A0 reading by 1024 and then multiply it by 256 (256/1024 = 0.25) to get the FSR reading mapped to the LED
+
 
 ## Flex Sensor, Photo cell, Softpot
 Now experiment with the [flex sensor (Optional)](https://www.adafruit.com/product/1070), [photo cell](https://www.adafruit.com/product/161) and [softpot](https://www.adafruit.com/product/178).
@@ -100,7 +110,11 @@ Now experiment with the [flex sensor (Optional)](https://www.adafruit.com/produc
 
 **a. What resistance do you need to have in series to get a reasonable range of voltages from each sensor?**
 
+2 10k resistors in series works best for the flex sensor
+
 **b. What kind of relationship does the resistance have as a function of stimulus? (e.g., linear?)**
+
+The flex sensor is roughly linear.
 
 Control the colors of the LED using the above sensors ( including FSR )
 
@@ -127,6 +141,7 @@ Get a feel for the data the accelerometer provides. Pick up the Arduino+accelero
  
 **a. Include your accelerometer read-out code in your write-up.**
 
+    okay
 
 ## Part E. Logging values to the EEPROM and reading them back
  
@@ -135,14 +150,22 @@ The sample code in `File->Examples->EEPROM` shows functions from the [Arduino EE
 
 **a. Does it matter what actions are assigned to which state? Why?**
 
+    Yes, the assigned actions matters because they do different things
+
 **b. Why is the code here all in the setup() functions and not in the loop() functions?**
+
+    Because the actions are done only once. The loop is only for keeping the LED.
 
 Each character in the string is a byte. That is, it takes 8-bits to encode a character, so the number of characters in the string we are writing is the number of bytes we are occupying in EEPROM. The [Atmega 328P](https://www.microchip.com/wwwproducts/en/atmega328p) at the heart of the Arduino has 1024 bytes of internal [EEPROM](http://en.wikipedia.org/wiki/EEPROM) Memory (which is separate from the 32KB of [Program memory](https://en.wikipedia.org/wiki/Read-only_memory) it has for the code it is running.)
 
 **c. How many byte-sized data samples can you store on the Atmega328?**
 
+    1024 bytes
+
 **d. How would you get analog data from the Arduino analog pins to be byte-sized? How about analog data from the I2C devices?**
 
+    I can make a mask to shif the bits. For I2C devices it's the same, just change the mask so data will be adjusted to be byte sized.
+    
 **e. Alternately, how would we store the data if it were bigger than a byte? (hint: take a look at the [EEPROMPut](https://www.arduino.cc/en/Reference/EEPROMPut) example)**
 
 Modify the code to take in analog values from your sensors and print them back out to the Arduino Serial Monitor.
