@@ -2,7 +2,7 @@
  This is a lab assignment made by Everett Key for Cornell Tech ECE 5413
  Interactive Device Dsign. Lab 2 Part D: Make my own timer
  
-The timer will count down according to the reading of the potentiameter. 
+The timer will count down according to the reading of the potentiometer. 
 When the potentiameter is turned, the timer reset.
 When timer reaches 0, buzzer will sound, and continue to sound until timer 
 is reset.

@@ -20,7 +20,7 @@ Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 #define LOGO_HEIGHT   16
 #define LOGO_WIDTH    16
 
-int sensorPin = A0;
+int sensorPin = A1;
 int sensorValue = 0; 
 
 void setup() {
@@ -43,6 +43,7 @@ void setup() {
 
 void loop() {
   sensorValue = analogRead(sensorPin);
+  Serial.println(sensorValue);
   testdrawstyles(sensorValue);
   delay(5);
 }
