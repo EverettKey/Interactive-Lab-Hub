@@ -70,7 +70,7 @@ Some more sophisticated sensors have ICs that measure physical phenomena and the
 
 **a. Turn in a copy of your final state diagram.**
 
-![My State Diagram](https://imgur.com/afMb6Qt.)
+![My State Diagram](https://imgur.com/afMb6Qt.jpg)
 
 ## Part G. Create your own data logger!
 Now it's up to you to integrate the software and hardware necessary to interface with your data logger! Your logger should be able to record a stream of analog data (at a sample rate of your desire) and then play it back at some later point in time on your display of choice.
