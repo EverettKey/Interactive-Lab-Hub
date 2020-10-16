@@ -16,15 +16,13 @@ https://youtu.be/OOOnaE3GH4E
 
 ** include a photo of your box and servo mount **
 
-![Servo mount](https://imgur.com/hZJofZj)
+![Servo mount](https://imgur.com/hZJofZj.jpg)
 
-https://imgur.com/hZJofZj
+https://imgur.com/hZJofZj.jpg
 
 ** include a photo of your box closed  **
 
-![box 1](https://imgur.com/uzh61pO)
-
-![box 2](https://imgur.com/5BGSMN4)
+![box CLosed](https://imgur.com/uzh61pO.jpg)
 
 ## Create Jack
 
@@ -39,5 +37,8 @@ For your write up, include:
 3.	At least one photo-studio-quality photo of your box closed, and another photo of your box open. 
 
 4.	A video of your box in action.
+![box Closed](https://imgur.com/uzh61pO.jpg)
+
+![box Opened](https://imgur.com/5BGSMN4.jpg)
 
 https://youtu.be/AMYjwB441wk
