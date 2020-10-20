@@ -10,6 +10,7 @@
 
     1024 is 2 to the 10th power, so 10 bits
 
+
 ## Part B. RGB LED
 **a. What voltage values do you see from your force sensor?**
 
@@ -37,7 +38,9 @@
 
 Some more sophisticated sensors have ICs that measure physical phenomena and then output an digital signal indicating what the analog voltage reading is. 
 
+
 ### Accelerometer
+
 
 **a. Include your accelerometer read-out code in your write-up.**
 
