@@ -11,3 +11,5 @@ Completed Labs for Everett K. Student
 4. [Everett K's Lab 4](https://github.com/EverettKey/Interactive-Lab-Hub/tree/master/Lab4)
 
 5. [Everett K's Lab 5](https://github.com/EverettKey/Interactive-Lab-Hub/blob/master/Lab5/readme_lab5.md)
+
+6. [Everett K's Lab 6](https://github.com/EverettKey/Interactive-Lab-Hub/tree/master/Lab6)
