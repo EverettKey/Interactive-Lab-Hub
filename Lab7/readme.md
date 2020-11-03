@@ -30,57 +30,7 @@ Open the Serial Monitor in Arduino and observe what happens when you press the b
 
 ## Internet browsing on the Raspberry Pi
 
-To fetch information that is on the internet, we have used curl or  wget:
-```
-pi@ixe00:~/helloYou $ curl http://google.com
-<HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
-<TITLE>301 Moved</TITLE></HEAD><BODY>
-<H1>301 Moved</H1>
-The document has moved
-<A HREF="http://www.google.com/">here</A>.
-</BODY></HTML>
 
-pi@ixe00:~ $ wget http://www.google.com
---2020-09-03 19:02:22--  http://www.google.com/
-Resolving www.google.com (www.google.com)... 172.217.164.100, 2607:f8b0:4005:805::2004
-Connecting to www.google.com (www.google.com)|172.217.164.100|:80... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: unspecified [text/html]
-Saving to: ‘index.html’
-
-index.html              [ <=>                ]  11.84K  --.-KB/s    in 0.001s  
-
-2020-09-03 19:02:22 (18.2 MB/s) - ‘index.html’ saved [12127]
-```
-These programs are similar, but the above example shows how they differ. Curl does a ‘one-shot’ download of the file, whereas wget gets the forward and then goes to the forwarded address to download the index.html file.
-
-We can use this to get data from the internet! Try:
-```
-$ curl extreme-ip-lookup.com/csv/
-```
-This looks up the information about Pi’s location through the IP address of the local router.
-
-Weather:
-```
-$ curl wttr.in
-$ curl wttr.in/moon
-```
-This can be used to download files that are hosted on the internet. Download a musical clip that you like that is in a format that can be played on the Raspberry Pi.
-
-How can we *view* the web from a command line interface? Two ways! First, we can just use a text based browser, like lynx.
-```
-$ sudo apt install lynx
-$ lynx http://cornell.edu
-```
-We can also use X windows to view the internet in a more familiar way:
-
-Epiphany browser: ` $ sudo apt install epiphany`
-Midori browser: `$ sudo apt install midori`
-Which one did you like more? Uninstall the other one!
-```
-$ sudo apt uninstall [package that you did not prefer]
-
-```
 
 ## Serving webpages with the Raspberry Pi
 
@@ -105,9 +55,13 @@ Look at the code. How does the Arduino communicate with the Pi when the code is 
 ** What messages are expected from the Pi to the Arduino? **
 
     Character "H", which will turn the LED
+
 ** What happens if the Pi sends an unexpected message to the Arduino? **
+
     The LED will turn off.
+
 ** How fast does the Arduino communicate with the Pi? What would you change to make it send messages less often? **
+
     The baud rate is 9600 so 9600 bits persecond. I can set it to lower baud rate to send messages less often.
 
 Compile and flash the `helloYou.ino` code onto the Arduino.
@@ -141,6 +95,8 @@ What messages are sent to the console? When?
 
 See MyInternet OfCornlellThings for code
 Video
+
+https://youtu.be/nE8pCTnX_HE
 
 ## Video doorbell
 
