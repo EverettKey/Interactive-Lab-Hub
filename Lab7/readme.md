@@ -94,6 +94,7 @@ What messages are sent to the console? When?
 ## Internet of Cornell Tech Things 
 
 See MyInternet OfCornlellThings for code
+
 Video
 
 https://youtu.be/nE8pCTnX_HE
