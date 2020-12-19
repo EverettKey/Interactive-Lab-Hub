@@ -43,6 +43,7 @@ In order to find a party light. I embarked on a journey to find the most rad par
 # Putting it all together
 * These are all the cables I need. I have a power chord for Pi and a power chord for projector, an aux cable, a camera cable, a USB to the Auduino, and a power line from the relay to the projector. Now all I needto do is to organize the wires and neatly fit  them inside the bucket.
 ![wire_layout](\pictures\wire_layout.JPG)
+![drawing](\pictures\drawing.jpg)
 * Bam! Beautiful
 ![nice_cords_arangement](https://imgur.com/zUWJOtq.jpg)
 * The breadboard is positioned closed to the opening for the relay to attach to.
