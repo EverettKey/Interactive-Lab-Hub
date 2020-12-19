@@ -34,3 +34,11 @@ I am planning to implement this as my first step. Mainly setting up the pipeline
 ![state diagram Ver.3](https://imgur.com/0qj1VBX.png)
 
 This is my final goal. By broadcasting the signal onto a server that I host, I can send the siganl to every output that has a Pi listening to the server. I can set them off alltogether at the same time.
+
+# Plan
+
+* Set up face recognition
+* Set up trigger sensor (prototyping with push button)
+* Send both ace and trigger signal to server
+* Read face and trigger signal from server
+* Execute actions (Light, sound, confetti)
