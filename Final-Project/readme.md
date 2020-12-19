@@ -51,4 +51,4 @@ In order to find a party light. I embarked on a journey to find the most rad par
 ##  The working video
 A hat is added for better presentation.
 ![setup](\pictures\setup_room.JPG)
-![Video](https://youtu.be/XP9JwoVYuVE)
+[Video](https://youtu.be/XP9JwoVYuVE)
